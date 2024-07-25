@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>Customer home</title>
+		<link rel="stylesheet" type="text/css" th:href="@{/customerhome.css}">
+	</head>
+	<body>
+		<header>   
+		    <div class="navbar">
+		    	<img alt="" width="100px" height="50px" src="https://w0.peakpx.com/wallpaper/835/864/HD-wallpaper-bright-music-logo-colored.jpg">
+		    	<p>TUNE TROVE</p>
+		     	<a href="logout">Logout</a>
+		    	<a href="login">Login</a>
+				<a href="registration">Register</a>
+		     	<a href="about">About</a>		     	
+		     	<a href="home">Home</a>
+		    </div>
+    	</header>
+	
+		<h1>Customer Login</h1>
+		
+		<div th:unless="${ispremium}" class="main">
+	
+			<br><br>
+			<form action="pay">
+				<input type="submit" value="GET PREMIUM">
+			</form>
+			<br>
+	
+			<form action="logout">
+				<input type="submit" value="LOGOUT">
+			</form>
+			<br><br>
+	
+		</div>
+	
+		<div th:if="${ispremium}" class="main1">
+	
+			<table border="1">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Artist</th>
+						<th>Genre</th>
+						<th>Play</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr th:each="s:${songs}">
+						<td th:text="${s.name}"></td>
+						<td th:text="${s.artist}"></td>
+						<td th:text="${s.genre}"></td>
+						<!-- <td th:utext="${s.link}"></td> -->
+	
+						<td>
+							<audio controls>
+								<source th:src="${s.link}">
+							</audio>
+						</td>
+					</tr>
+				 </tbody>
+			</table>	
+		</div>
+		<footer>
+	    	<p>&copy; 2024 Tune Trove Music Streaming App | Design and Development. All Rights Reserved.</p>
+	    </footer>
+	
+	</body>
+</html>

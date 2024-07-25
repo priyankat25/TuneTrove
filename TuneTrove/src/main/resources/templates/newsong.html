@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>Add New Song</title>
+		<link rel="stylesheet" type="text/css" th:href="@{/newsong.css}">
+	</head>
+	<body>
+	
+		<header>   
+		    <div class="navbar">
+		    	<img alt="" width="100px" height="50px" src="https://w0.peakpx.com/wallpaper/835/864/HD-wallpaper-bright-music-logo-colored.jpg">
+		    	<p>TUNE TROVE</p>
+		     	<a href="logout">Logout</a>
+		    	<a href="login">Login</a>
+				<a href="registration">Register</a>
+		     	<a href="about">About</a>		     	
+		     	<a href="home">Home</a>
+		    </div>
+    	</header>
+    	<h1>Add Songs</h1>
+		<form action="addsong" method="post" class="main">
+			<br><br>						
+			<label>Song Name:</label>
+			<input type="text" name="name">
+			<br><br>
+			
+			<label>Song Artist:</label>
+			<input type="text" name="artist">
+			<br><br>
+			
+			<label>Song Genre:</label>
+			<input type="text" name="genre">
+			<br><br>
+			
+			<label>Song Link:</label>
+			<input type="text" name="link">
+			<br><br>
+		
+			<input type="submit" value="ADD SONG">
+			<br><br>
+		</form>
+		
+		<footer>
+	    	<p>&copy; 2024 Tune Trove Music Streaming App | Design and Development. All Rights Reserved.</p>
+	    </footer>
+	</body>
+</html>

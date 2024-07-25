@@ -1,0 +1,80 @@
+@charset "UTF-8";
+body {
+	background-image: url("https://wallpapercave.com/wp/pTLHYOp.jpg");
+	background-repeat: no-repeat;
+  	background-attachment: fixed;
+  	background-size: 100% 100%;
+	text-align: center;
+	margin: auto;
+	margin-top: 100px;
+  	width: 50%;
+}
+
+header {
+	position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+	font-size: 35px;
+}
+
+.navbar p, img {
+	float: left;
+	display: block;
+  	color: white;
+  	font-weight: bold;
+  	text-align: center;
+  	padding: 3px;
+  	text-decoration: none;
+  	font-size: 17px;
+}
+
+.navbar a {
+  	float: right;
+  	display: block;
+  	color: white;
+  	font-weight: bold;
+  	text-align: center;
+  	padding: 14px 16px;
+  	text-decoration: none;
+  	font-size: 17px;
+}
+
+.main {
+	background-color: #e8e6e6; 
+	text-align: center;
+	margin: auto;
+	margin-top: 120px;
+  	width: 30%;
+  	border: 3px solid #f04e4e;
+  	border-radius: 25px;
+  	padding: 16px;
+  	color: #120101;
+}
+
+.main1 {
+	background-color: #e8e6e6; 
+	text-align: center;
+	margin: auto;
+	margin-top: 50px;
+  	width: 100%;
+  	border: 3px solid #f04e4e;
+  	border-radius: 25px;
+  	padding: 16px;
+  	color: #120101;
+}
+
+footer {
+	position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    color: white;
+  	font-weight: bold;
+    text-align: center;
+    font-weight: bold ;
+	font-size: 15px;
+}

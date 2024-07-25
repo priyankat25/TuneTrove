@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+		<meta charset="UTF-8">
+		<title>Admin Login</title>
+		<link rel="stylesheet" type="text/css" th:href="@{/adminhome.css}">
+	</head>
+	<body>
+		<header>   
+		    <div class="navbar">
+		    	<img alt="" width="100px" height="50px" src="https://w0.peakpx.com/wallpaper/835/864/HD-wallpaper-bright-music-logo-colored.jpg">
+		    	<p>TUNE TROVE</p>
+		     	<a href="logout">Logout</a>
+		    	<a href="login">Login</a>
+				<a href="registration">Register</a>
+		     	<a href="about">About</a>		     	
+		     	<a href="home">Home</a>
+		    </div>
+    	</header>
+    	<h1>Admin Login</h1>
+		
+		<div class="main">
+			<form action="newsong">
+			<input type="submit" value="ADD SONGS">
+			</form>
+			<br><br>
+		
+			<form action="viewsongs">
+				<input type="submit" value="VIEW SONGS">
+			</form>
+			<br><br>
+		
+			<form action="createplaylists">
+				<input type="submit" value="CREATE PLAYLIST">
+			</form>
+			<br><br>
+		
+			<form action="viewplaylists">
+				<input type="submit" value="VIEW PLAYLISTS">
+			</form>
+		</div>
+		
+		<footer>
+	    	<p>&copy; 2024 Tune Trove Music Streaming App | Design and Development. All Rights Reserved.</p>
+	    </footer>
+	</body>
+</html>
